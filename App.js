@@ -1,7 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Image, Text, View } from "react-native";
-
-const PlaceholderImage = require("./assets/images/b.png");
+import ImageViewer from "./components/ImageViewer";
 
 export default function App() {
   return (
@@ -9,9 +8,7 @@ export default function App() {
       <Text style={textStyles.container}>
         This is my first react native project
       </Text>
-      <View style={styles.imageContainer}>
-        <Image source={PlaceholderImage} style={styles.image} />
-      </View>
+      <ImageViewer />
       <StatusBar style="auto" />
     </View>
   );
@@ -23,15 +20,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#25292e",
     alignItems: "center",
     justifyContent: "center",
-  },
-  imageContainer: {
-    flex: 1,
-    paddingTop: 58,
-  },
-  image: {
-    width: 340,
-    height: 440,
-    borderRadius: 14,
   },
 });
 
