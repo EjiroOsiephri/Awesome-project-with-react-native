@@ -8,7 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <ImageViewer />
       <View style={styles.footerContainer}>
-        <Button label="Choose this photo"></Button>
+        <Button theme="primary" label="Choose this photo"></Button>
         <Button label="Use this photo"></Button>
       </View>
       <StatusBar style="auto" />
